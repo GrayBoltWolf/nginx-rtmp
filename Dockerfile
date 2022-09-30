@@ -50,4 +50,4 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log && \
 COPY stat.xsl /etc/nginx/stat.xsl
 
 EXPOSE 1935
-CMD ["/bin/bash"]
+CMD ["nginx", "-g", "daemon off;"]
