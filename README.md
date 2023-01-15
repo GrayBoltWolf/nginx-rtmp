@@ -2,7 +2,7 @@
 
 Simple docker image to stream RTMP video with some form of access control.
 
-`docker run -d --name nginx-rtmp --mount type=bind,source=/HOST/htpasswd,target=/etc/nginx/htpasswd --mount type=bind,source=/HOST/nginx.conf,target=/etc/nginx/nginx.conf -p 1935:1935 -p 8080:8080 --restart=unless-stopped docker pull ghcr.io/grayboltwolf/nginx-rtmp:latest`
+`docker run -d --name nginx-rtmp --mount type=bind,source=/HOST/htpasswd,target=/etc/nginx/htpasswd --mount type=bind,source=/HOST/nginx.conf,target=/etc/nginx/nginx.conf -p 1935:1935 -p 8080:8080 --restart=unless-stopped ghcr.io/grayboltwolf/nginx-rtmp:main`
 
 RTMP server: `rtmp://SERVER_IP/live`
 
