@@ -1,7 +1,7 @@
 FROM buildpack-deps:stable
 
 # Versions of Nginx and nginx-rtmp-module to use
-ENV NGINX_VERSION nginx-1.9.9
+ENV NGINX_VERSION nginx-1.25.0
 
 # Install dependencies
 RUN apt-get update && \
